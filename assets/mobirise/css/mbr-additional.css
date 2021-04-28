@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap);
 
 
 
@@ -16,12 +17,12 @@ body {
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3rem;
+  font-family: 'Cairo', sans-serif;
+  font-size: 2.4rem;
   font-display: swap;
 }
 .display-2 > .mbr-iconfont {
-  font-size: 4.8rem;
+  font-size: 3.84rem;
 }
 .display-4 {
   font-family: 'Rubik', sans-serif;
@@ -40,7 +41,7 @@ body {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -59,9 +60,9 @@ body {
     line-height: calc( 1.4 * (2.1374999999999997rem + (4.25 - 2.1374999999999997) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
-    font-size: 2.4rem;
-    font-size: calc( 1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.7rem + (3 - 1.7) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 1.92rem;
+    font-size: calc( 1.49rem + (2.4 - 1.49) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.4 * (1.49rem + (2.4 - 1.49) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-4 {
     font-size: 0.8rem;
@@ -546,7 +547,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -1194,11 +1195,47 @@ section.lazy-placeholder:after {
 .cid-svLxcBU2Is P {
   color: #ed3833;
 }
+.cid-svQVi95VnS {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-svQVi95VnS .mbr-section-subtitle {
+  color: #767676;
+  text-align: left;
+}
+.cid-svQVi95VnS H2 {
+  text-align: left;
+}
+.cid-svQWtLPIAQ {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+}
+.cid-svQWtLPIAQ .line {
+  background-color: #ed3833;
+  color: #ed3833;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-svQWtLPIAQ .section-text {
+  padding: 2rem 0;
+  text-align: left;
+}
+.cid-svQWtLPIAQ .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-svQWtLPIAQ .inner-container {
+    width: 100% !important;
+  }
+}
 .cid-svLESWCtbc {
-  padding-top: 30px;
-  padding-bottom: 45px;
-  background-color: #55b4d4;
-  background: linear-gradient(#55b4d4, #efefef);
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background-color: #f9f295;
+  background: linear-gradient(#f9f295, #ffffff);
 }
 .cid-svLESWCtbc .carousel-control {
   background: #000;
@@ -1402,7 +1439,10 @@ section.lazy-placeholder:after {
 .cid-svLJnsz6Jw {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #2e2e2e;
+  background-color: #e4d295;
+}
+.cid-svLJnsz6Jw .media-container-row .mbr-text {
+  color: #232323;
 }
 .cid-svLhIYLpBL .navbar {
   background: #ffffff;
@@ -1818,7 +1858,10 @@ section.lazy-placeholder:after {
 .cid-svLJnsz6Jw {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #2e2e2e;
+  background-color: #e4d295;
+}
+.cid-svLJnsz6Jw .media-container-row .mbr-text {
+  color: #232323;
 }
 .cid-svLhIYLpBL .navbar {
   background: #ffffff;
@@ -2299,5 +2342,8 @@ section.lazy-placeholder:after {
 .cid-svLJnsz6Jw {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-color: #2e2e2e;
+  background-color: #e4d295;
+}
+.cid-svLJnsz6Jw .media-container-row .mbr-text {
+  color: #232323;
 }
