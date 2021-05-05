@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-04-27_1205",
-    "currentPage": "Safety-Products.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -10,7 +10,7 @@
         "secondaryColor": "#ed3833",
         "successColor": "#facd48",
         "infoColor": "#82786E",
-        "warningColor": "#879A9F",
+        "warningColor": "#ffffff",
         "dangerColor": "#B1A374",
         "mainFont": "Rubik",
         "display1Font": "Rubik",
@@ -118,6 +118,135 @@
         {
           "alias": false,
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#212c39"
+            },
+            ".carousel": {
+              "margin": "0px 0",
+              "background": "#ccc",
+              "position": "relative",
+              "box-shadow": "0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset"
+            },
+            ".carousel:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "z-index": "-1",
+              "box-shadow": "0 0 20px rgba(0, 0, 0, 0.8)",
+              "height": "60px",
+              "bottom": "0px",
+              "left": "10px",
+              "right": "10px",
+              "border-radius": "(100px / 20px)"
+            },
+            ".carousel .item": {
+              "text-align": "center",
+              "overflow": "hidden",
+              "height": "475px"
+            },
+            ".carousel .item img": {
+              "max-width": "100%",
+              "width": "100%",
+              "margin": "0 auto"
+            },
+            ".carousel .carousel-control": {
+              "width": "50px",
+              "height": "50px",
+              "background": "#000",
+              "margin": "auto 0",
+              "opacity": "0.8"
+            },
+            ".carousel .carousel-control:hover": {
+              "opacity": "0.9"
+            },
+            ".carousel .carousel-control i": {
+              "font-size": "41px"
+            },
+            ".carousel-caption h3, .carousel-caption p": {
+              "color": "#212c39",
+              "display": "inline-block",
+              "font-family": "'Oswald', sans-serif",
+              "text-shadow": "none",
+              "margin-bottom": "20px"
+            },
+            ".carousel-caption h3": {
+              "background": "@tbgColor",
+              "padding": "12px 24px",
+              "font-size": "40px",
+              "text-transform": "uppercase"
+            },
+            ".carousel-caption p": {
+              "background": "@stbgColor",
+              "padding": "10px 20px",
+              "font-size": "20px",
+              "font-weight": "300"
+            },
+            ".carousel-action": {
+              "padding": "10px 0 30px"
+            },
+            ".carousel-action .btn": {
+              "min-height": "34px",
+              "border-radius": "0",
+              "margin": "3px",
+              "min-width": "150px",
+              "text-transform": "uppercase",
+              "font-family": "'Oswald', sans-serif"
+            },
+            ".carousel-action .btn-primary": {
+              "border-color": "#000",
+              "background": "none",
+              "color": "#000"
+            },
+            ".carousel-action .btn-primary:hover": {
+              "background": "#000",
+              "color": "#fff"
+            },
+            ".carousel-action .btn-success": {
+              "background": "#8fc93c",
+              "border": "none"
+            },
+            ".carousel-action .btn-success:hover": {
+              "background": "#87bd35"
+            },
+            ".carousel-indicators li, .carousel-indicators li.active": {
+              "width": "11px",
+              "height": "11px",
+              "border-radius": "50%",
+              "margin": "1px 6px"
+            },
+            ".carousel-indicators li": {
+              "background": "transparent",
+              "border": "1px solid #fff"
+            },
+            ".carousel-indicators li.active": {
+              "background": "@inbgColor",
+              "border-color": "@inbgColor"
+            },
+            ".btn": {
+              "font-size": "12px"
+            },
+            "P": {
+              "color": "#232323",
+              "text-align": "center"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_slider_with_text_button\" class=\"mbr-section header slider_with_text_button\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n      <input type=\"color\" title=\"Title Bg Color\" name=\"tbgColor\" value=\"#232323\">\n      <input type=\"color\" title=\"SubTitle Bg Color\" name=\"stbgColor\" value=\"#facd48\">\n      <input type=\"color\" title=\"Indicator Bg Color\" name=\"inbgColor\" value=\"#ed3833\">\n       <input type=\"checkbox\" title=\"Show Buttons\" name=\"showbutton\">\n      <input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\">\n      <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showsubtitle\" checked>\n      <select title=\"Content Width\" name=\"widthContent\">\n            <option value=\"1\" selected>Full Width</option>\n            <option value=\"2\">None Full Width</option>\n        </select>\n      <select title=\"Slider Count\" name=\"slidercount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n        </select>\n    <!-- End block parameters -->\n    </mbr-parameters> \n<div mbr-class=\"{ 'fullwidth': widthContent == 1, 'container': widthContent == 2}\">\n\t<div class=\"row\">\n\t\t<div class=\"col-md-12\">\n\t\t\t<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\n\t\t\t\t<!-- Carousel indicators -->\n\t\t\t\t<ol class=\"carousel-indicators\">\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\" mbr-if=\"slidercount > 0\"></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"1\" mbr-if=\"slidercount > 1\"></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"2\" mbr-if=\"slidercount > 2\"></li>\n                  <li data-target=\"#myCarousel\" data-slide-to=\"3\" mbr-if=\"slidercount > 3\"></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"4\" mbr-if=\"slidercount > 4\"></li>\n\t\t\t\t</ol>     \n\t\t\t\t<!-- Wrapper for carousel items -->\n\t\t\t\t<div class=\"carousel-inner\">\n\t\t\t\t\t<div class=\"item carousel-item active\" mbr-if=\"slidercount > 0\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/4-1920x1280.jpeg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Award Winning Support</h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Ommax Electric is an equipment manufacturing company based in India(Chennai) .</p>\n\t\t\t\t\t\t\t<div class=\"carousel-action\" mbr-if=\"showbutton\" mbr-text mbr-buttons><a href=\"#\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\">Try Now</a></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\t\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 1\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/1-1920x1277.jpeg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Amazing Digital Experience</h3>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Started in 2021 by a team of Professional Electronic / Electrical Engineers to service Electronics Equipments on Commercial and Industrial devices.</p>\n\t\t\t\t\t\t\t<div class=\"carousel-action\" mbr-if=\"showbutton\" mbr-text mbr-buttons><a href=\"#\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">Learn More</a>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\">Try Now</a></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 2\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/3-2-1920x1280.jpeg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Live Monitoring Tools</h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Ommax Electric strictly caters products to customer’s industry requirements.</p>\n\t\t\t\t\t\t\t<div class=\"carousel-action\" mbr-if=\"showbutton\" mbr-text mbr-buttons>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Learn More</a>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-success\">Try Now</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                  <div class=\"item carousel-item\" mbr-if=\"slidercount > 3\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/pexels-pixabay-159397-820x400.png\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Amazing Digital Experience</h3>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">We also have the distinct honour of being the first Indian company to manufacture GPS based Time management systems. </p>\n\t\t\t\t\t\t\t<div class=\"carousel-action\" mbr-if=\"showbutton\" mbr-text mbr-buttons>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Learn More</a>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-success\">Try Now</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n                  <div class=\"item carousel-item\" mbr-if=\"slidercount > 4\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/pexels-pixabay-159397-820x400.jpg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Amazing Digital Experience</h3>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Started in 2021 by a team of Professional Electronic / Electrical Engineers to service Electronics Equipments on Commercial and Industrial devices.</p>\n\t\t\t\t\t\t\t<div class=\"carousel-action\" mbr-if=\"showbutton\" mbr-text mbr-buttons>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-primary\">Learn More</a>\n\t\t\t\t\t\t\t\t<a href=\"#\" class=\"btn btn-success\">Try Now</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<!-- Carousel controls -->\n\t\t\t\t<a class=\"carousel-control left carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\" mbr-if=\"slidercount > 1\">\n\t\t\t\t\t<i class=\"fa fa-angle-left\"></i>\n\t\t\t\t</a>\n\t\t\t\t<a class=\"carousel-control right carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\" mbr-if=\"slidercount > 1\">\n\t\t\t\t\t<i class=\"fa fa-angle-right\"></i>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n  </div>\n</section>",
+          "_cid": "DcZBRIJMNn",
+          "_anchor": "design-block-DcZBRIJMNn",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             ".navbar": {
               "background": "@menuBgColor",
               "transition": "none",
@@ -145,7 +274,7 @@
                 "padding": "0.7rem 0 !important",
                 "margin": "0rem .65rem !important",
                 "-webkit-align-items": "center",
-                "-webkit-justify-content": "center"
+                "-webkit-justify-content": "right"
               }
             },
             ".nav-item:focus, .nav-link:focus": {
@@ -531,8 +660,8 @@
               "color": "@itemsHoverColor !important"
             }
           },
-          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
+          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Ommax Electric</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "svLhIYLpBL",
           "_anchor": "menu2-11",
           "_PHPplaceholders": [],
@@ -553,396 +682,8 @@
               "text-align": "left"
             },
             "H2": {
-              "text-align": "left"
-            }
-          },
-          "_name": "content4",
-          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    Welcome to Ommax Electric Pvt. Ltd</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\"></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobiri.se\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobiri.se\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "svQVi95VnS",
-          "_anchor": "content4-b",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".content-slider": {
-              "display": "-webkit-flex",
-              "justify-content": "center",
-              "-webkit-justify-content": "center"
-            },
-            ".modal-body .close": {
-              "background": "#1b1b1b"
-            },
-            ".modal-body .close span": {
-              "font-style": "normal"
-            },
-            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
-              "display": "-webkit-flex"
-            },
-            ".carousel-control .icon-next, .carousel-control .icon-prev": {
-              "margin-top": "-18px",
-              "font-size": "40px",
-              "line-height": "27px"
-            },
-            ".carousel-control:hover": {
-              "background": "#1b1b1b",
-              "color": "#fff",
-              "opacity": "1"
-            },
-            "@media (max-width: 767px)": {
-              ".container .carousel-control": {
-                "margin-bottom": "0"
-              },
-              ".content-slider-wrap": {
-                "width": "100% !important"
-              }
-            },
-            ".boxed-slider": {
-              "position": "relative",
-              "padding": "100px 0"
-            },
-            ".boxed-slider > div": {
-              "position": "relative"
-            },
-            ".container img": {
-              "width": "100%"
-            },
-            ".container img + .row": {
-              "position": "absolute",
-              "top": "50%",
-              "left": "0",
-              "right": "0",
-              "-webkit-transform": "translateY(-50%)",
-              "-moz-transform": "translateY(-50%)",
-              "transform": "translateY(-50%)",
-              "z-index": "2"
-            },
-            ".mbr-section": {
-              "padding": "0",
-              "background-attachment": "scroll"
-            },
-            ".mbr-table-cell": {
-              "padding": "0"
-            },
-            ".container .carousel-indicators": {
-              "margin-bottom": "3px"
-            },
-            ".carousel-caption": {
-              "top": "50%",
-              "right": "0",
-              "bottom": "auto",
-              "left": "0",
-              "display": "-webkit-flex",
-              "align-items": "center",
-              "-webkit-transform": "translateY(-50%)",
-              "transform": "translateY(-50%)",
-              "-webkit-align-items": "center"
-            },
-            ".mbr-overlay": {
-              "z-index": "1"
-            },
-            ".container-slide.container": {
-              "width": "100%",
-              "min-height": "100vh",
-              "padding": "0"
-            },
-            ".carousel-item": {
-              "background-position": "50% 50%",
-              "background-repeat": "no-repeat",
-              "background-size": "cover",
-              "opacity": "1"
-            },
-            ".carousel-item.active.right, .carousel-item.next": {
-              "left": "0",
-              "transition": "opacity 0.7s ease-in-out",
-              "opacity": "0"
-            },
-            ".carousel-item.active.left, .carousel-item.prev": {
-              "left": "0",
-              "transition": "opacity 0.7s ease-in-out",
-              "opacity": "0"
-            },
-            ".carousel-item.active, .carousel-item.next.left, .carousel-item.prev.right": {
-              "left": "0",
-              "opacity": "1"
-            },
-            ".mbr-slider": {
-              ".carousel-control": {
-                "top": "50%",
-                "width": "50px",
-                "height": "50px",
-                "margin-top": "-1.5rem",
-                "font-size": "35px",
-                "background-color": "rgba(0, 0, 0, 0.5)",
-                "border": "2px solid #fff",
-                "border-radius": "50%",
-                "transition": "all 0.3s",
-                "z-index": "11",
-                "&.carousel-control-prev": {
-                  "left": "0",
-                  "margin-left": "2.5rem"
-                },
-                "&.carousel-control-next": {
-                  "right": "0",
-                  "margin-right": "2.5rem"
-                },
-                ".mbr-iconfont": {
-                  "font-size": "1.5rem"
-                },
-                "@media (max-width: 767px)": {
-                  "top": "auto",
-                  "bottom": "1rem"
-                }
-              },
-              ".carousel-indicators": {
-                "position": "absolute",
-                "bottom": "0",
-                "margin-bottom": "1.5rem !important",
-                "li": {
-                  "max-width": "15px",
-                  "height": "15px",
-                  "width": "15px",
-                  "max-height": "15px",
-                  "margin": "3px",
-                  "background-color": "rgba(0, 0, 0, 0.5)",
-                  "border": "2px solid #fff",
-                  "border-radius": "50%",
-                  "opacity": "0.5",
-                  "transition": "all 0.3s",
-                  "&.active, &:hover": {
-                    "opacity": "0.9"
-                  },
-                  "&::after, &::before": {
-                    "content": "none"
-                  }
-                },
-                "&.ie-fix": {
-                  "left": "50%",
-                  "display": "block",
-                  "width": "60%",
-                  "margin-left": "-30%",
-                  "text-align": "center"
-                },
-                "@media (max-width: 576px)": {
-                  "display": "none !important"
-                }
-              },
-              "> .container": {
-                "img": {
-                  "width": "100%",
-                  "+ .row": {
-                    "position": "absolute",
-                    "top": "50%",
-                    "right": "0",
-                    "left": "0",
-                    "z-index": "2",
-                    "-moz-transform": "translateY(-50%)",
-                    "-webkit-transform": "translateY(-50%)",
-                    "transform": "translateY(-50%)"
-                  }
-                },
-                ".carousel-indicators": {
-                  "margin-bottom": "3px"
-                },
-                "@media (max-width: 576px)": {
-                  ".carousel-control": {
-                    "margin-bottom": "0"
-                  }
-                }
-              },
-              ".mbr-section": {
-                "padding": "0",
-                "background-attachment": "scroll"
-              },
-              ".mbr-table-cell": {
-                "padding": "0"
-              }
-            },
-            ".carousel-item .container.container-slide": {
-              "position": "initial",
-              "min-height": "0"
-            },
-            ".full-screen": {
-              ".slider-fullscreen-image": {
-                "min-height": "100vh",
-                "background-repeat": "no-repeat",
-                "background-position": "50% 50%",
-                "background-size": "cover",
-                "&.active": {
-                  "display": "-o-flex"
-                }
-              },
-              "& .container": {
-                "width": "auto",
-                "padding-right": "0",
-                "padding-left": "0"
-              },
-              ".carousel-item .container.container-slide": {
-                "width": "100%",
-                "min-height": "100vh",
-                "padding": "0",
-                "& img": {
-                  "display": "none"
-                }
-              }
-            },
-            ".mbr-background-video-preview": {
-              "position": "absolute",
-              "top": "0",
-              "right": "0",
-              "bottom": "0",
-              "left": "0"
-            },
-            ".mbr-overlay ~ .container-slide": {
-              "z-index": "auto"
-            },
-            ".mbr-slider.slide .container": {
-              "overflow": "hidden",
-              "padding": "0"
-            },
-            ".carousel-inner": {
-              "height": "100%"
-            },
-            ".slider-fullscreen-image": {
-              "height": "100%",
-              "background": "transparent !important"
-            },
-            ".image_wrapper": {
-              "height": "(@sliderHSize * 1px)",
-              "width": "100%",
-              "position": "relative",
-              "display": "inline-block"
-            },
-            ".image_wrapper img": {
-              "width": "100% !important",
-              "height": "100%",
-              "object-fit": "cover"
-            },
-            ".carousel-item .container-slide": {
-              "text-align": "center"
-            },
-            ".content-slider-wrap": {
-              "width": "(@sliderWSize * 1%)"
-            }
-          },
-          "_name": "slider2",
-          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <!-- <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked> -->\n        <input type=\"hidden\" name=\"typeSlider\" value=\"headerSlider\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\" inline>\n        <input type=\"range\" title=\"Width\" name=\"sliderWSize\" min=\"50\" max=\"100\" step=\"1\" value=\"100\" inline>\n        <input type=\"range\" title=\"Height\" name=\"sliderHSize\" min=\"300\" max=\"700\" step=\"10\" value=\"420\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"container content-slider\">\n        <div class=\"content-slider-wrap\">\n            <div mbr-carousel=\"slides\"></div>\n        </div>\n    </div>\n</section>",
-          "_cid": "swrALyioaJ",
-          "_anchor": "slider2-1h",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_protectedParams": [
-            "slides__autoplay",
-            "slides__autoplayInterval",
-            "slides__showBullets",
-            "slides"
-          ],
-          "_global": false,
-          "_once": false,
-          "_params": {
-            "slides__autoplay": "hover",
-            "slides__autoplayInterval": "3000",
-            "slides__showBullets": false,
-            "slides": [
-              {
-                "image": "@PROJECT_PATH@/assets/images/3-1920x1280.jpeg",
-                "active": false,
-                "showButtons": false,
-                "showText": true,
-                "showTitle": false,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-2",
-                "customStyle2": "display-7",
-                "customStyle3": "display-4",
-                "alt": "",
-                "title": "",
-                "textTitle": "FULL SCREEN SLIDER",
-                "overlay": true,
-                "contentAlign": "center",
-                "text": "<b><br></b><br><br><br><br><br><br><br><br><br><br><br><b>Ommax Electric is an equipment manufacturing company based in India(Chennai) . We are technology-oriented company who focus on R&amp;D and High tech Industrial Applications. </b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR MAC</a>"
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/4-1920x1280.jpeg",
-                "active": false,
-                "showButtons": false,
-                "showText": true,
-                "showTitle": false,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-2",
-                "customStyle2": "display-7",
-                "customStyle3": "display-4",
-                "alt": "",
-                "title": "",
-                "textTitle": "VIDEO SLIDE",
-                "overlay": true,
-                "contentAlign": "center",
-                "text": "<b><br></b><br><br><br><br><br><br><br><br><br><br><br><b>We also have the distinct honour of being the first Indian company to manufacture GPS based Time management systems.</b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR MAC</a>",
-                "overlayOpacity": "0.5"
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/1-1920x1277.jpeg",
-                "active": false,
-                "showButtons": false,
-                "showText": true,
-                "showTitle": false,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-2",
-                "customStyle2": "display-7",
-                "customStyle3": "display-4",
-                "alt": "",
-                "title": "",
-                "textTitle": "IMAGE SLIDE",
-                "overlay": true,
-                "contentAlign": "center",
-                "text": "<b><br></b><br><br><br><br><br><br><br><br><br><br><br><b>We support customers with solutions in different parts of the world to monitor, generate, distribute and apply time. Ommax Electric strictly caters products to customer’s industry requirements.</b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-info\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR MAC</a>"
-              },
-              {
-                "image": "@PROJECT_PATH@/assets/images/test-800x400.jpg",
-                "active": true,
-                "showButtons": false,
-                "showText": true,
-                "showTitle": false,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "customStyle1": "display-2",
-                "customStyle2": "display-7",
-                "customStyle3": "display-4",
-                "alt": "",
-                "title": "",
-                "textTitle": "VIDEO SLIDE",
-                "overlay": true,
-                "contentAlign": "center",
-                "text": "<b><br></b><br><br><br><br><br><br><br><br><br><br><br><b>We also have the distinct honour of being the first Indian company to manufacture GPS based Time management systems.</b>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR MAC</a>",
-                "overlayOpacity": "0.5"
-              }
-            ]
-          }
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-section-subtitle": {
-              "color": "#767676",
-              "text-align": "left"
-            },
-            "H2": {
-              "text-align": "left"
+              "text-align": "left",
+              "color": "#212c39"
             }
           },
           "_name": "content4",
@@ -973,7 +714,7 @@
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 10, 'col-md-18': widthContent == 20, 'col-md-10': widthContent == 4, 'col-md-12': widthContent == 4}\"><p>Ommax Electric is an equipment manufacturing company based in India(Chennai) . We are technology-oriented company who focus on R&amp;D and High tech Industrial Applications. We are one of the world’s leading manufacturers of highly precise time stamping technologies, solutions for industrial instrumentations. Started in 2021 by a team of Professional Electronic / Electrical Engineers to service Electronics Equipments on Commercial and Industrial devices.. We also have the distinct honour of being the first Indian company to manufacture GPS based Time management systems. We have grown as a unit ever since then to become the market leaders in India. We tailor our solutions for industry verticals such as power sectors, chemical industries, Oil &amp; Gas, Telecom, Defence, civilian networks etc. We support customers with solutions in different parts of the world to monitor, generate, distribute and apply time. Ommax Electric strictly caters products to customer’s industry requirements.</p></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 10, 'col-md-18': widthContent == 20, 'col-md-10': widthContent == 4, 'col-md-12': widthContent == 4}\"><p>Ommax Electric is an equipment manufacturing company based in India(Chennai) . We are technology-oriented company who focus on R&amp;D and High tech Industrial Applications. We are one of the world’s leading manufacturers of highly precise time stamping technologies, solutions for industrial instrumentations. Started in 2021 by a team of Professional Electronic / Electrical Engineers to service Electronics Equipments on Commercial and Industrial devices. We also have the distinct honour of being the first Indian company to manufacture GPS based Time management systems. We have grown as a unit ever since then to become the market leaders in India. We tailor our solutions for industry verticals such as power sectors, chemical industries, Oil &amp; Gas, Telecom, Defence, civilian networks etc. We support customers with solutions in different parts of the world to monitor, generate, distribute and apply time. Ommax Electric strictly caters products to customer’s industry requirements.</p></div>\n        </div>\n    </div>\n</section>",
           "_cid": "swfKnzcAaX",
           "_anchor": "content1-q",
           "_PHPplaceholders": [],
@@ -1162,7 +903,7 @@
                 "padding": "0.7rem 0 !important",
                 "margin": "0rem .65rem !important",
                 "-webkit-align-items": "center",
-                "-webkit-justify-content": "center"
+                "-webkit-justify-content": "right"
               }
             },
             ".nav-item:focus, .nav-link:focus": {
@@ -1548,8 +1289,8 @@
               "color": "@itemsHoverColor !important"
             }
           },
-          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
+          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Ommax Electric</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "svLhIYLpBL",
           "_anchor": "menu2-11",
           "_PHPplaceholders": [],
@@ -1761,7 +1502,7 @@
                 "padding": "0.7rem 0 !important",
                 "margin": "0rem .65rem !important",
                 "-webkit-align-items": "center",
-                "-webkit-justify-content": "center"
+                "-webkit-justify-content": "right"
               }
             },
             ".nav-item:focus, .nav-link:focus": {
@@ -2147,8 +1888,8 @@
               "color": "@itemsHoverColor !important"
             }
           },
-          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
+          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Ommax Electric</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "svLhIYLpBL",
           "_anchor": "menu2-11",
           "_PHPplaceholders": [],
@@ -2389,7 +2130,7 @@
                 "padding": "0.7rem 0 !important",
                 "margin": "0rem .65rem !important",
                 "-webkit-align-items": "center",
-                "-webkit-justify-content": "center"
+                "-webkit-justify-content": "right"
               }
             },
             ".nav-item:focus, .nav-link:focus": {
@@ -2775,8 +2516,8 @@
               "color": "@itemsHoverColor !important"
             }
           },
-          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
+          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Ommax Electric</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "svLhIYLpBL",
           "_anchor": "menu2-11",
           "_PHPplaceholders": [],
@@ -3350,7 +3091,7 @@
                 "padding": "0.7rem 0 !important",
                 "margin": "0rem .65rem !important",
                 "-webkit-align-items": "center",
-                "-webkit-justify-content": "center"
+                "-webkit-justify-content": "right"
               }
             },
             ".nav-item:focus, .nav-link:focus": {
@@ -3736,8 +3477,8 @@
               "color": "@itemsHoverColor !important"
             }
           },
-          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
-          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n                    <a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\">\n                        MOBIRISE\n                    </a>\n                </span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">&nbsp; Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
+          "_name": "menu2-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL-svLhIYLpBL",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global not-draggable once=\"menu\" position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#facd48\" condition=\"showItems\">\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\">\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#facd48\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#212c39\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-expand beta-menu navbar-dropdown align-items-center\" mbr-class=\"{\n        'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent\n        }\">\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n        <div class=\"menu-logo\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/web-white-copy-299x125.png\" alt=\"OOMEX_LOGO\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                        Ommax Electric</a></span>\n            </div>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-if=\"showItems\" mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,\n                'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-white\" href=\"index.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Home</a>\n                </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n                        Products</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">LOW VOLTAGE PRODUCTS</a><a class=\"text-white dropdown-item text-primary\" href=\"Safety-Products.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">SAFETY PRODUCTS</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">FASTENERS &amp; HARDWARE</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">COMMUNICATION PRODUCT</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">GREEN ENERGY PRODUCT\t</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">CABLE &amp; ACCESSORIES</a><a class=\"text-white dropdown-item\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">MOTORS</a></div></li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-white text-primary\" href=\"error.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">Services</a>\n                </li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"about-us.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        About Us\n                    </a></li><li class=\"nav-item\"><a class=\"nav-link link text-white\" href=\"contact.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        Contact</a></li></ul>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-success-outline\" href=\"tel:+919442620075\" data-app-placeholder=\"Type Text\"><span class=\"material material-phone-iphone mbr-iconfont mbr-iconfont-btn\"></span>\n                    \n                    +91-9442620075</a></div>\n        </div>\n    </nav>\n</section>",
           "_cid": "svLhIYLpBL",
           "_anchor": "menu2-11",
           "_PHPplaceholders": [],
