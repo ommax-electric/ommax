@@ -663,7 +663,11 @@ section.lazy-placeholder:after {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  border-radius: 13px;
+}
+.cid-DcZBRIJMNn .carousel-column {
+  height: 500px;
+  width: 900px;
+  margin: 0 auto;
 }
 .cid-DcZBRIJMNn .carousel .carousel-control {
   width: 30px;
