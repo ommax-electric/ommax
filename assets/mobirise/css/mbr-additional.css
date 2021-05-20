@@ -812,33 +812,6 @@ section.lazy-placeholder:after {
 .cid-swfKnzcAaX .mbr-text P {
   text-align: justify;
 }
-.cid-swvPKh5R1A .hidden {
-  display: none;
-}
-.cid-swvPKh5R1A .floating-bar {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 10px;
-  background-color: #facd48;
-  color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  transition: 0.3s;
-  z-index: 99999;
-}
-.cid-swvPKh5R1A .floating-bar:hover {
-  background-color: #ed3833;
-}
-.cid-swvPKh5R1A .floating-button {
-  color: #ffffff;
-}
-.cid-swvPKh5R1A .valign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .cid-swTrC3XNfG .navbar {
   padding: .5rem 0;
   background: #212c39;
@@ -2451,33 +2424,6 @@ section.lazy-placeholder:after {
     display: block;
   }
 }
-.cid-swvPSr2CHC .hidden {
-  display: none;
-}
-.cid-swvPSr2CHC .floating-bar {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 10px;
-  background-color: #facd48;
-  color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  transition: 0.3s;
-  z-index: 99999;
-}
-.cid-swvPSr2CHC .floating-bar:hover {
-  background-color: #ed3833;
-}
-.cid-swvPSr2CHC .floating-button {
-  color: #ffffff;
-}
-.cid-swvPSr2CHC .valign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .cid-swTrC3XNfG .navbar {
   padding: .5rem 0;
   background: #212c39;
@@ -3069,33 +3015,6 @@ section.lazy-placeholder:after {
 }
 .cid-sxsphIEL0B .mbr-section-title {
   color: #ed3833;
-}
-.cid-swvPPRmSQR .hidden {
-  display: none;
-}
-.cid-swvPPRmSQR .floating-bar {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  right: 10px;
-  background-color: #facd48;
-  color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  transition: 0.3s;
-  z-index: 99999;
-}
-.cid-swvPPRmSQR .floating-bar:hover {
-  background-color: #ed3833;
-}
-.cid-swvPPRmSQR .floating-button {
-  color: #ffffff;
-}
-.cid-swvPPRmSQR .valign {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .cid-swTrC3XNfG .navbar {
   padding: .5rem 0;
