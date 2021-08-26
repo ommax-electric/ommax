@@ -3,9 +3,6 @@
 		<loc>https://ommax-electric.github.io/ommax/index.html</loc>
 	</url>
 	<url>
-		<loc>https://ommax-electric.github.io/ommax/error.html</loc>
-	</url>
-	<url>
 		<loc>https://ommax-electric.github.io/ommax/contact.html</loc>
 	</url>
 	<url>
@@ -73,5 +70,8 @@
 	</url>
 	<url>
 		<loc>https://ommax-electric.github.io/ommax/procurement-services.html</loc>
+	</url>
+	<url>
+		<loc>https://ommax-electric.github.io/ommax/error.html</loc>
 	</url>
 </urlset>
