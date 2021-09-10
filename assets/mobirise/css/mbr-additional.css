@@ -997,14 +997,14 @@ section.lazy-placeholder:after {
 }
 .cid-sFHcRXXI4M {
   padding-top: 45px;
-  padding-bottom: 0px;
+  padding-bottom: 15px;
   background-color: #ffffff;
   background: linear-gradient(#ffffff, #ffffff);
   border-radius: 18px;
 }
 .cid-sFHcRXXI4M .carousel-control {
   background: #000;
-  visibility: hidden;
+  visibility: visible;
 }
 .cid-sFHcRXXI4M .mbr-section-subtitle {
   color: #767676;
@@ -13722,7 +13722,7 @@ section.lazy-placeholder:after {
   height: 100%;
   width: 100%;
   transition: all 0.3s;
-  background: black;
+  background: transparent;
   opacity: 0.2;
   z-index: 10;
   pointer-events: none;
