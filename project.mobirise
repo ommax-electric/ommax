@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ommax Electric old-clone",
-    "currentPage": "index.html",
+    "currentPage": "Safety-Products.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -19863,27 +19863,6 @@
             "slides__autoplayInterval": "1000",
             "slides__showBullets": false,
             "slides": [
-              {
-                "image": "@PROJECT_PATH@/assets/images/low-voltage-products-1-1125x632.jpg",
-                "active": false,
-                "showButtons": true,
-                "showText": true,
-                "showTitle": true,
-                "playVideo": false,
-                "videoUrl": "https://www.youtube.com/watch?v=tUP5S4YdEJo",
-                "customStyle1": "display-1",
-                "customStyle2": "display-5",
-                "customStyle3": "display-7",
-                "alt": "",
-                "title": "",
-                "textTitle": "<br><br><br><br><br>OUR PRODUCTS",
-                "overlay": true,
-                "contentAlign": "left",
-                "text": "<br>We provide a full range of low voltage solutions to connect, protect, control and measure a wide range of products<br><br>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success display-7\" data-app-placeholder=\"Type Text\" href=\"our-products.html#animateFeatures8-ap\" data-toolbar=\"-mbrBtnMove\">View More</a> ",
-                "overlayOpacity": "0.8",
-                "overlayColor": "#232323"
-              },
               {
                 "image": "@PROJECT_PATH@/assets/images/low-voltage-products-1-1125x632.jpg",
                 "active": true,
