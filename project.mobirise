@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Ommax Electric old-clone",
-    "currentPage": "Insulated-Matting.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -15,14 +15,14 @@
         "mainFont": "Rubik",
         "display1Font": "Rubik",
         "display1Size": "2",
-        "display2Font": "Catamaran",
+        "display2Font": "Average Sans",
         "display2Size": "2.4",
         "display5Font": "Roboto Condensed",
         "display5Size": "1.2",
         "display7Font": "Roboto",
-        "display7Size": 1,
-        "display4Font": "Average Sans",
-        "display4Size": "1.1",
+        "display7Size": "1",
+        "display4Font": "Saira Condensed",
+        "display4Size": "1.2",
         "isRoundedButtons": false,
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
@@ -69,6 +69,11 @@
         "css": "'Catamaran', sans-serif",
         "name": "Catamaran",
         "url": "https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      },
+      {
+        "css": "'Saira Condensed', sans-serif",
+        "name": "Saira Condensed",
+        "url": "https://fonts.googleapis.com/css?family=Saira+Condensed:100,200,300,400,500,600,700,800,900"
       }
     ],
     "imageResize": true,
@@ -369,7 +374,7 @@
                 "overlay": true,
                 "contentAlign": "left",
                 "text": "<br>Ommax Electric offers to clients a large range of LV/MV Switch-gear products/Safety products/LV &amp; MV Cables and accessories/Communication products/Green Energy products/Industrial Hardware's.<br>",
-                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success display-7\" data-app-placeholder=\"Type Text\" href=\"demo.html\" data-toolbar=\"-mbrBtnMove\">Our Products</a> ",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-success display-7\" data-app-placeholder=\"Type Text\" href=\"our-products.html\" data-toolbar=\"-mbrBtnMove\">Our Products</a> ",
                 "overlayOpacity": "0.5"
               }
             ]
